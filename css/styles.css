@@ -643,7 +643,7 @@ nav {
   }
 }
 
-.services__section {
+/* .services__section {
   background-color: var(--white);
   color: var(--primary-color);
   padding: 60px 20px;
@@ -740,4 +740,4 @@ nav {
   font-size: 1rem;
   color: var(--text-light);
   line-height: 1.6;
-}
+} */
