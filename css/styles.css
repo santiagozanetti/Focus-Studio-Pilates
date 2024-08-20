@@ -563,7 +563,7 @@ nav {
   color: var(--white);
 }
 
-@media (width < 900px) {
+@media (max-width: 900px) {
   .nav__links {
     display: none;
   }
@@ -602,7 +602,7 @@ nav {
   }
 }
 
-@media (width < 600px) {
+@media (max-width: 600px) {
   .explore__header {
     flex-direction: column;
   }
@@ -643,7 +643,7 @@ nav {
   }
 }
 
-/* .services__section {
+.services__section {
   background-color: var(--white);
   color: var(--primary-color);
   padding: 60px 20px;
@@ -740,4 +740,4 @@ nav {
   font-size: 1rem;
   color: var(--text-light);
   line-height: 1.6;
-} */
+}
