@@ -72,6 +72,7 @@ a {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-color);
+  overflow-x: hidden;
 }
 
 nav {
