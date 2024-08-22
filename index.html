@@ -17,11 +17,11 @@
         <a href="#"><img src="assets/logo.png" alt="logo" /></a>
       </div>
       <ul class="nav__links">
-        <li class="link"><a href="#">Beneficios</a></li>
-        <li class="link"><a href="#">Nosotros</a></li>
-        <li class="link"><a href="#">Servicios</a></li>
-        <li class="link"><a href="#">Planes</a></li>
-        <li class="link"><a href="#">Contacto</a></li>
+        <li class="link"><a href="#beneficios">Beneficios</a></li>
+        <li class="link"><a href="#nosotros">Nosotros</a></li>
+        <li class="link"><a href="#servicios">Servicios</a></li>
+        <li class="link"><a href="#planes">Planes</a></li>
+        <li class="link"><a href="#contacto">Contacto</a></li>
       </ul>
       <button class="btn">Contactanos</button>
     </nav>
@@ -48,7 +48,7 @@
     <main>
       <!--------------------------------- SECCION BENEFICIOS ------------------------------------->
 
-      <section class="section__container explore__container">
+      <section id="beneficios" class="section__container explore__container">
         <div class="explore__header">
           <h2 class="section__header">EXPLORA NUESTROS BENEFICIOS</h2>
         </div>
@@ -91,7 +91,7 @@
 
       <!--------------------------------- SECCION NOSOTROS ------------------------------------->
 
-      <section class="section__container class__container">
+      <section id="nosotros" class="section__container class__container">
         <div class="class__image">
           <span class="bg__blur"></span>
           <img src="assets/fondo02.jpg" alt="class" class="class__img-1" />
@@ -113,7 +113,7 @@
 
       <!--------------------------------- SECCION PORQUE ELEGIRNOS ------------------------------------->
 
-      <section class="section__container join__container">
+      <section id="eleginos" class="section__container join__container">
         <h2 class="section__header">¿POR QUÉ ELEGIRNOS?</h2>
         <p class="section__subheader">
           Nuestro compromiso es ofrecerte un entorno motivador y personalizado,
@@ -152,7 +152,7 @@
 
       <!--------------------------------- SECCION SERVICIOS ------------------------------------->
 
-      <section class="services__section">
+      <section id="servicios" class="services__section">
         <div class="section__container">
           <div class="services__header">
             <h2 class="section__header">NUESTROS SERVICIOS</h2>
@@ -253,7 +253,7 @@
 
       <!--------------------------------- SECCION PLANES ------------------------------------->
 
-      <section class="section__container price__container">
+      <section id="planes" class="section__container price__container">
         <h2 class="section__header">PLANES</h2>
         <p class="section__subheader">
           Todos nuestros planes a tu disposición!
@@ -325,7 +325,7 @@
 
       <!--------------------------------- SECCION TESTIMONIOS ------------------------------------->
 
-      <section class="review">
+      <section id="testimonios" class="review">
         <div class="section__container review__container">
           <span><i class="ri-double-quotes-r"></i></span>
           <div class="review__content">
@@ -346,10 +346,10 @@
             </div>
             <div class="review__footer">
               <div class="review__member">
-                <img src="assets/fondo01.jpg" alt="member" />
+                <!-- <img src="assets/fondo01.jpg" alt="member" /> -->
                 <div class="review__member__details">
-                  <h4>Jane Cooper</h4>
-                  <p>Software Developer</p>
+                  <h4>- Jane Cooper</h4>
+                  <!-- <p>Software Developer</p> -->
                 </div>
               </div>
               <div class="review__nav">
@@ -357,6 +357,109 @@
                 <span><i class="ri-arrow-right-line"></i></span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------------------- SECCION FAQ ------------------------------------->
+      <section id="faqs" class="faq">
+        <div class="section__container faqs__container">
+          <h2 class="section__header">Tenemos Respuestas</h2>
+          <!-- <p class="p2">
+          Respuestas a algunas de las preguntas más memorables que hemos
+          encontrado.
+        </p>
+        <p>
+          Entendemos que la vida en Dunder Mifflin Scranton puede estar llena de
+          momentos curiosos y consultas extravagantes. Estamos aquí para atender
+          sus preguntas con un toque de humor y un encanto único.
+        </p> -->
+
+          <button class="collapsible">
+            ¿Qué es Pilates y en qué se diferencia de otras actividades físicas?
+          </button>
+          <div class="faqcontent">
+            <p>
+              Pilates es un método de ejercicio que se enfoca en fortalecer el
+              core, mejorar la flexibilidad, y alinear el cuerpo. A diferencia
+              de otras actividades físicas, Pilates utiliza movimientos
+              controlados y precisos, lo que lo hace ideal para mejorar la
+              postura y el equilibrio.
+            </p>
+          </div>
+          <button class="collapsible">
+            ¿Cuántas veces a la semana debo practicar Pilates para ver
+            resultados?
+          </button>
+          <div class="faqcontent">
+            <p>
+              Para notar mejoras significativas en la fuerza, flexibilidad y
+              postura, se recomienda practicar Pilates al menos 2-3 veces por
+              semana. La consistencia es clave para obtener resultados.
+            </p>
+          </div>
+          <button class="collapsible">
+            ¿Necesito experiencia previa para comenzar Pilates?
+          </button>
+          <div class="faqcontent">
+            <p>
+              No, Pilates es adecuado para principiantes y expertos. Nuestros
+              instructores te guiarán a través de los movimientos, asegurando
+              que trabajes dentro de tus límites mientras desarrollas tus
+              habilidades.
+            </p>
+          </div>
+          <button class="collapsible">
+            ¿Pilates es adecuado para personas con lesiones o dolores crónicos?
+          </button>
+          <div class="faqcontent">
+            <p>
+              Sí, Pilates puede ser beneficioso para personas con lesiones o
+              dolores crónicos. Sin embargo, es importante informar al
+              instructor sobre cualquier condición para que las clases puedan
+              ser adaptadas a tus necesidades.
+            </p>
+          </div>
+
+          <button class="collapsible">
+            ¿Qué debo usar para una clase de Pilates?
+          </button>
+          <div class="faqcontent">
+            <p>
+              Se recomienda usar ropa cómoda y ajustada que te permita moverte
+              libremente. Evita ropa suelta para que el instructor pueda ver tu
+              alineación y postura correctamente.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--------------------------------- SECCION CONTACTO ------------------------------------->
+      <section id="contacto" class="contact">
+        <div class="section__container contact__container">
+          <div class="contact__details">
+            <div class="contact__header">
+              <h2 class="contact__header">Contáctanos</h2>
+            </div>
+            <div class="contact__info">
+              <p><strong>Teléfono:</strong> +5411 2615-9194</p>
+              <p><strong>Email:</strong> contacto@focusstudiopilates.com</p>
+              <p>
+                <strong>Dirección:</strong> Industria 3157, Villa Ballester.
+              </p>
+              <p><strong>Horarios:</strong> 8:00 a 11:00 - 16:00 a 20:00</p>
+            </div>
+          </div>
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.829607961976!2d-58.55540582452699!3d-34.557869355077806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7583e52bc7f%3A0xa3324d6926dcf727!2sIndustria%203157%2C%20B1653%20Villa%20Ballester%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1724367117928!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </section>
@@ -381,14 +484,14 @@
       </div>
       <div class="footer__col">
         <h4>Nosotros</h4>
-        <a href="#">Beneficios</a>
-        <a href="#">Servicios</a>
-        <a href="#">Planes</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#planes">Planes</a>
       </div>
       <div class="footer__col">
         <h4>Links Útiles</h4>
-        <a href="#">FAQ</a>
-        <a href="#">Testimonios</a>
+        <a href="#faq">FAQ</a>
+        <a href="#testimonios">Testimonios</a>
         <a href="#">Careers</a>
       </div>
       <div class="footer__col">
@@ -396,7 +499,7 @@
         <a href="#">Ubicación</a>
         <a href="#">Teléfono</a>
         <a href="#">Email</a>
-        <!-- <a href="#">BMI Calculator</a> -->
+        <a href="#">BMI Calculator</a>
       </div>
     </footer>
     <div class="footer__bar">
@@ -404,5 +507,6 @@
     </div>
 
     <script src="js/menu.js"></script>
+    <script src="js/faq.js"></script>
   </body>
 </html>

@@ -15,7 +15,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
+  scroll-behavior: smooth;
 }
 
 .section__container {
@@ -770,4 +771,121 @@ nav {
   background-color: var(
     --secondary-color-dark
   ); /* Cambia de color al hacer hover */
+}
+
+/* FAQ ----------------------------------------------------------- */
+.collapsible {
+  cursor: pointer;
+  padding: 36px 20px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--color-principal);
+  text-align: left;
+  font-weight: bold;
+  background-color: var(--color-principal);
+  color: var(--white);
+  letter-spacing: 0.5px;
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid magenta;
+}
+
+.collapsible:hover {
+  background-color: var(--primary-color-light);
+}
+
+.collapsible:before {
+  content: "\002B";
+  color: var(--secondary-color);
+  font-weight: bold;
+  float: right;
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.collapsible.active:before {
+  content: "\2212";
+  transform: rotate(180deg);
+}
+
+.faqcontent {
+  padding: 0 18px;
+  margin-bottom: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: var(--white);
+  margin-top: 15px;
+}
+
+.faqcontent.open {
+  opacity: 1;
+}
+
+/* -------------------------------- SECCION CONTACTO ----------------------------------------- */
+
+.contact__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact__header {
+  margin-bottom: 2rem;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: left;
+  color: var(--white);
+}
+
+.contact__info p {
+  font-size: 1.4rem;
+  color: var(--text-light);
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.contact__info p strong {
+  color: var(--white);
+}
+
+.contact__map iframe {
+  border-radius: 15px;
+  width: 100%;
+  height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+  /* Ajuste del contenedor principal para pantalla móvil */
+  .contact__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Centrar el título en dispositivos móviles */
+  .contact__header {
+    font-size: 2rem; /* Ajustar tamaño para pantallas pequeñas */
+    text-align: center;
+    margin-bottom: 1.5rem; /* Reducir espacio inferior */
+  }
+
+  /* Espaciar adecuadamente el contenido de contacto */
+  .contact__info p {
+    font-size: 1.2rem; /* Ajustar tamaño de fuente para mejor legibilidad */
+    margin-bottom: 1.5rem; /* Reducir espacio entre párrafos */
+    text-align: center; /* Centrar el texto para pantallas pequeñas */
+  }
+
+  /* Asegurarse de que el mapa se vea debajo del contenido de contacto */
+  .contact__map {
+    margin-top: 2rem; /* Añadir espacio entre el texto de contacto y el mapa */
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+    height: 300px; /* Ajustar la altura del mapa */
+  }
 }
