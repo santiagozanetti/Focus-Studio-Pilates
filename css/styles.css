@@ -15,7 +15,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   scroll-behavior: smooth;
 }
 
@@ -849,6 +849,7 @@ nav {
   color: var(--text-light);
   margin-bottom: 3rem;
   line-height: 1.6;
+  text-decoration: none;
 }
 
 .contact__info p strong {
