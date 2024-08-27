@@ -1,68 +1,17 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = menuBtn.querySelector("i");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav__links");
+const links = document.querySelectorAll(".nav__links li");
 
-menuBtn.addEventListener("click", (e) => {
-  navLinks.classList.toggle("open");
-
-  const isOpen = navLinks.classList.contains("open");
-  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+// Alternar la clase activa al hacer clic en el icono de hamburguesa
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  hamburger.classList.toggle("active"); // Esto asegura que el icono de la X aparezca
 });
 
-navLinks.addEventListener("click", (e) => {
-  navLinks.classList.remove("open");
-  menuBtnIcon.setAttribute("class", "ri-menu-line");
+// Cerrar el menú cuando se hace clic en un enlace
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    hamburger.classList.remove("active"); // Asegura que la hamburguesa vuelva
+  });
 });
-
-const scrollRevealOption = {
-  distance: "50px",
-  origin: "bottom",
-  duration: 1000,
-};
-
-// header container
-ScrollReveal().reveal(".header__image img", {
-  ...scrollRevealOption,
-});
-
-ScrollReveal().reveal(
-  ".header__content h4, .header__content .section__header",
-  {
-    ...scrollRevealOption,
-    delay: 500,
-  }
-);
-
-ScrollReveal().reveal(".header__content p", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-
-ScrollReveal().reveal(".header__btn", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
-
-// about container
-ScrollReveal().reveal(".about__image img", {
-  ...scrollRevealOption,
-  origin: "left",
-});
-
-ScrollReveal().reveal(".about__content .section__header", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-
-ScrollReveal().reveal(".about__content .section__description", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-
-ScrollReveal().reveal(".about__card", {
-  ...scrollRevealOption,
-  delay: 1500,
-  interval: 500,
-});
-
-

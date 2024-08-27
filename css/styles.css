@@ -119,6 +119,66 @@ nav {
   width: 100%;
 }
 
+/* Estilos para el ícono de hamburguesa */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 2rem;
+  color: var(--white);
+}
+
+/* Media queries para móviles */
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .nav__links a {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .nav__links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger .fa-bars {
+    display: block;
+  }
+
+  .hamburger .fa-times {
+    display: none;
+  }
+
+  .hamburger.active .fa-bars {
+    display: none;
+  }
+
+  .hamburger.active .fa-times {
+    display: block;
+  }
+}
+
 .header__container {
   position: relative;
   padding-top: 2rem;
@@ -878,6 +938,7 @@ nav {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
     text-align: center;
+    text-decoration: none;
   }
 
   .contact__map {
@@ -890,8 +951,4 @@ nav {
   body {
     overflow-x: hidden;
   }
-}
-
-* {
-  outline: 1px solid red; /* Te mostrará qué elementos están fuera del contenedor */
 }
