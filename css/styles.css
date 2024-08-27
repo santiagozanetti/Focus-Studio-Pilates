@@ -890,6 +890,6 @@ nav {
 @media screen and (max-width: 768px) {
   .section__container {
     max-width: 100%; /* Que ocupe todo el ancho del dispositivo móvil */
-    padding: 2rem 1rem; /* Menos padding en móviles */
+    padding: 3.5rem 1rem; /* Menos padding en móviles */
   }
 }
