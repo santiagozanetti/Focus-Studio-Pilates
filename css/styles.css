@@ -11,10 +11,6 @@
   --max-width: 1200px;
 }
 
-html {
-  overflow: hidden;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -893,7 +889,7 @@ nav {
 
 @media screen and (max-width: 768px) {
   .section__container {
-    max-width: 100%; /* Ajusta el max-width para que ocupe todo el ancho en móviles */
-    padding: 2rem 1rem; /* Reduce el padding para pantallas pequeñas */
+    max-width: 100%; /* Que ocupe todo el ancho del dispositivo móvil */
+    padding: 2rem 1rem; /* Menos padding en móviles */
   }
 }
