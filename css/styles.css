@@ -87,6 +87,10 @@ nav {
   gap: 2rem;
 }
 
+.header__content p {
+  margin-bottom: 2rem; /* Espacio debajo del párrafo */
+}
+
 .nav__logo {
   max-width: 70px;
 }
@@ -426,18 +430,19 @@ nav {
 .price__grid {
   margin-top: 4rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
 .price__card {
-  padding: 3rem 2rem;
+  padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
   background-color: var(--primary-color-light);
   border: 2px solid transparent;
   border-radius: 10px;
   transition: 0.3s;
+  text-align: center;
 }
 
 .price__card:hover {
@@ -455,6 +460,9 @@ nav {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--white);
+  border-bottom: 2px solid var(--white);
+  padding-bottom: 1rem;
+  text-align: center;
 }
 
 .price__card h3 {
@@ -463,7 +471,7 @@ nav {
   font-size: 2rem;
   font-weight: 600;
   color: var(--white);
-  border-bottom: 2px solid var(--white);
+  text-align: center;
 }
 
 .price__card p {
@@ -488,9 +496,21 @@ nav {
   background-color: var(--secondary-color);
 }
 
+@media (max-width: 1024px) {
+  .price__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .price__grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /* ---------------------- TESTIMONIOS ---------------------- */
 
-.review {
+/* .review {
   background-color: var(--primary-color-light);
 }
 
@@ -560,7 +580,7 @@ nav {
   font-size: 2rem;
   color: var(--secondary-color);
   cursor: pointer;
-}
+} */
 
 /* ---------------------- FOOTER ---------------------- */
 .footer__container {
@@ -630,6 +650,12 @@ nav {
   font-size: 1rem;
   color: var(--white);
   text-align: center;
+}
+
+.footer__col .contact__info {
+  display: block;
+  color: var(--text-light);
+  text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -710,9 +736,15 @@ nav {
   .footer__bar {
     text-align: center;
   }
+
+  .footer__col .contact__info {
+    display: block;
+    color: var(--text-light);
+    text-decoration: none;
+  }
 }
 
-/* SERVICIOS ----------------------------------------------------- */
+/* ----------------------------------------------------- SERVICIOS ----------------------------------------------------- */
 
 .services__section {
   background-color: var(--primary-color);
@@ -738,12 +770,13 @@ nav {
 .services__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
+  justify-items: center;
 }
 
 .services__grid .card:nth-last-child(2),
 .services__grid .card:last-child {
-  grid-column: span 1;
+  grid-column: span 0;
 }
 
 .services__grid .card:nth-last-child(2) {
@@ -760,8 +793,7 @@ nav {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: 350px;
-  margin: 0 auto;
+  max-width: 100%;
 }
 
 .card:hover {
@@ -833,10 +865,14 @@ nav {
   ); /* Cambia de color al hacer hover */
 }
 
-/* FAQ ----------------------------------------------------------- */
+/* -------------------------------- FAQ --------------------------------------- */
+.faq-container {
+  margin-top: 30px;
+}
+
 .collapsible {
   cursor: pointer;
-  padding: 36px 20px;
+  padding: 36px 30px;
   width: 100%;
   border: none;
   border-bottom: 2px solid var(--color-principal);
