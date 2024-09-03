@@ -28,7 +28,7 @@
         <li class="link"><a href="#planes">Planes</a></li>
         <li class="link"><a href="#contacto">Contacto</a></li>
       </ul>
-      <button class="btn contact-btn">Contáctanos</button>
+      <!-- <button class="btn contact-btn">Contáctanos</button> -->
       <div class="hamburger" id="hamburger">
         <i class="fas fa-bars"></i>
         <!-- Ícono de hamburguesa -->
@@ -44,9 +44,9 @@
         <h4>ENFOCATE EN SER TU MEJOR VERSIÓN</h4>
         <h1><span>FOCUS</span> STUDIO PILATES</h1>
         <p>
-          Transforma tu cuerpo y mente en nuestro estudio. Ofrecemos un espacio
-          dedicado al bienestar, donde cada movimiento está diseñado para
-          fortalecer, equilibrar y revitalizar.
+          Nuestro enfoque único te permite experimentar la versatilidad del
+          Pilates en todas sus formas, potenciando cada movimiento y maximizando
+          los beneficios para tu cuerpo y mente.
         </p>
         <a href="#planes" class="btn home__btn">Empezá Ahora!</a>
       </div>
@@ -335,7 +335,7 @@
 
       <!--------------------------------- SECCION HORARIOS ------------------------------------->
 
-      <section class="horarios__section section__container">
+      <section id="horarios" class="horarios__section section__container">
         <div class="section__header__container">
           <h2 class="section__header">HORARIOS</h2>
           <p class="section__subheader">
@@ -355,24 +355,45 @@
             <tbody>
               <tr>
                 <td>Lunes, Miércoles y Viernes</td>
-                <td>09:00 - 12:00, 15:00 - 20:00</td>
+                <td>
+                  <div class="horario">
+                    <span class="turno turno--manana"
+                      >Turno Mañana: 09:00 - 12:00</span
+                    >
+                    <span class="turno turno--tarde"
+                      >Turno Tarde: 15:00 - 20:00</span
+                    >
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Martes y Jueves</td>
-                <td>08:00 - 12:00, 15:00 - 20:00</td>
+                <td>
+                  <div class="horario">
+                    <span class="turno turno--manana"
+                      >Turno Mañana: 08:00 - 12:00</span
+                    >
+                    <span class="turno turno--tarde"
+                      >Turno Tarde: 15:00 - 20:00</span
+                    >
+                  </div>
+                </td>
               </tr>
               <tr>
                 <td>Sábados</td>
-                <td>09:00 - 12:00</td>
+                <td>
+                  <span class="turno turno--manana"
+                    >Turno Mañana: 09:00 - 12:00</span
+                  >
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <!-- Llamada a la acción opcional -->
         <div class="cta__container">
           <p class="cta__text">
-            ¿Listo para unirte a nuestras clases? ¡Contáctanos para más
+            ¿Lista para unirte a nuestras clases? ¡Contáctanos para más
             información!
           </p>
         </div>
@@ -386,6 +407,7 @@
             Respuestas a algunas de las preguntas más comunes sobre nuestros
             servicios.
           </p>
+
           <div class="faq-container">
             <button class="collapsible">
               ¿Es Pilates adecuado para mí si nunca he hecho ejercicio?
@@ -464,9 +486,7 @@
             <div class="contact__info">
               <p><strong>Teléfono:</strong> +54 11 2615-9194</p>
               <p><strong>Email:</strong> contacto@focusstudiopilates.com</p>
-              <p>
-                <strong>Dirección:</strong> Industria 3157, Villa Ballester.
-              </p>
+              <p><strong>Dirección:</strong> Industria 3157, Villa Ballester</p>
             </div>
           </div>
           <div class="contact__map">
@@ -491,40 +511,53 @@
       <span class="bg__blur"></span>
       <span class="bg__blur footer__blur"></span>
       <div class="footer__col">
-        <div class="footer__logo"><img src="assets/logo.png" alt="logo" /></div>
+        <div class="footer__logo">
+          <img src="assets/logo.png" alt="logo" />
+        </div>
         <p>
-          Take the first step towards a healthier, stronger you with our
-          unbeatable pricing plans. Let's sweat, achieve, and conquer together!
+          Te invitamos a descubrir cómo el Pilates puede ser la clave para un
+          cuerpo más fuerte, flexible y equilibrado.
+          <a href="#planes" class="cta__link">Reserva hoy tu clase!</a>
         </p>
         <div class="footer__socials">
           <a
             href="https://wa.me/+541126159194"
             class="btn price__btn"
             target="_blank"
-            ><i class="ri-whatsapp-line"></i
+          >
+            <i class="ri-whatsapp-line"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/focus.studio.pilates/"
+            target="_blank"
+            ><i class="ri-instagram-line"></i
           ></a>
-          <a href="#"><i class="ri-facebook-fill"></i></a>
-          <a href="#"><i class="ri-instagram-line"></i></a>
         </div>
       </div>
+
       <div class="footer__col">
         <h4>Nosotros</h4>
-        <a href="#beneficios">Beneficios</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#planes">Planes</a>
+        <a class="footer__item" href="#beneficios">Beneficios</a>
+        <a class="footer__item" href="#servicios">Servicios</a>
+        <a class="footer__item" href="#planes">Planes</a>
+        <a class="footer__item" href="#horarios">Horarios</a>
       </div>
+
       <div class="footer__col">
-        <h4>Links Útiles</h4>
-        <a href="#faq">FAQ</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#">Careers</a>
-      </div>
-      <div class="footer__col">
-        <h4>Contactanos</h4>
-        <a href="#">Ubicación</a>
-        <span class="contact__info">Teléfono: (123) 456-7890</span>
-        <a href="#">Email</a>
-        <a href="#">BMI Calculator</a>
+        <h4>Contáctanos</h4>
+        <a
+          href="https://wa.me/+541126159194"
+          target="_blank"
+          class="contact__item__footer"
+        >
+          <i class="ri-whatsapp-line"></i> 11 2615 9194
+        </a>
+        <a class="contact__item__footer">
+          <i class="ri-mail-line"></i> focusstudiopilates@gmail.com
+        </a>
+        <a class="contact__item__footer">
+          <i class="ri-map-pin-line"></i> Industria 3157, Villa Ballester
+        </a>
       </div>
     </footer>
 
@@ -532,7 +565,17 @@
       Copyright © 2024 Focus Studio Pilates. Todos los derechos reservados.
     </div>
 
+    <!------------- BOTONES FLOTANTES -------------->
+    <a href="https://wa.me/+541126159194" class="btn-wsp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a class="btn-scroll-top" id="btnScrollTop" target="_blank">
+      <i class="fa-solid fa-angle-up"></i>
+    </a>
+
     <script src="js/menu.js"></script>
     <script src="js/faq.js"></script>
+    <script src="js/boton-flotante.js"></script>
   </body>
 </html>
