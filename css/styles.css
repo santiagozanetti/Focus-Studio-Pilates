@@ -198,11 +198,11 @@ nav {
 }
 
 .header__container::before {
-  content: "FITNESS";
+  content: "EQUILIBRIO";
   position: absolute;
-  bottom: 5rem;
-  right: 20rem;
-  font-size: 10rem;
+  bottom: 0.5rem;
+  right: 10rem;
+  font-size: 7rem;
   font-weight: 700;
   line-height: 7rem;
   color: var(--white);
