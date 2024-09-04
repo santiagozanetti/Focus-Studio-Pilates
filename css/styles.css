@@ -209,21 +209,19 @@ nav {
   opacity: 0.05;
   z-index: -1;
 }
-/* Estilos para dispositivos medianos (tabletas) */
+
 @media (max-width: 1024px) {
   .header__container::before {
     display: none;
   }
 }
 
-/* Estilos para dispositivos pequeños (teléfonos móviles) */
 @media (max-width: 768px) {
   .header__container::before {
     display: none;
   }
 }
 
-/* Estilos para dispositivos muy pequeños (teléfonos móviles en orientación vertical) */
 @media (max-width: 480px) {
   .header__container::before {
     display: none;
@@ -696,6 +694,7 @@ nav {
   font-size: 1.6rem;
   margin-right: 1rem;
   color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .contact__item__footer:hover {
@@ -751,6 +750,7 @@ nav {
   .contact__item__footer i {
     font-size: 1.4rem;
     margin-right: 0.5rem;
+    text-decoration: none;
   }
 
   .footer__bar {
@@ -804,6 +804,7 @@ nav {
   .contact__item__footer i {
     font-size: 1.4rem;
     margin-right: 0.75rem;
+    text-decoration: none;
   }
 
   .footer__bar {
@@ -842,6 +843,7 @@ nav {
   .contact__item__footer i {
     font-size: 1.5rem;
     text-align: center;
+    text-decoration: none;
   }
 
   .footer__bar {
@@ -1289,11 +1291,11 @@ nav {
   }
 
   .horarios__table td .turno--manana {
-    color: #86efac;
+    color: var(--text-light);
   }
 
   .horarios__table td .turno--tarde {
-    color: #fca5a5; /* Color distintivo para el turno de tarde */
+    color: var(--text-light); /* Color distintivo para el turno de tarde */
   }
 
   .cta__text {
