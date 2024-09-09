@@ -1153,8 +1153,8 @@ nav {
 }
 
 .contact__info a {
-  color: inherit; /* Usa el color del texto del elemento padre */
-  text-decoration: none; /* Elimina el subrayado */
+  color: inherit;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -1188,8 +1188,8 @@ nav {
   }
 
   .wpp__contact {
-    color: var(--text-light); /* Asegúrate de que el color sea el deseado */
-    text-decoration: none; /* Elimina el subrayado */
+    color: var(--text-light);
+    text-decoration: none;
   }
 }
 
@@ -1203,8 +1203,8 @@ nav {
   }
 
   .wpp__contact {
-    color: var(--text-light); /* Asegúrate de que el color sea el deseado */
-    text-decoration: none; /* Elimina el subrayado */
+    color: var(--text-light);
+    text-decoration: none;
   }
 }
 
@@ -1361,17 +1361,17 @@ nav {
   display: flex;
   text-align: center;
   justify-content: center;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color-light);
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  box-shadow: var(--shadow);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   color: #fff;
 }
 
 .btn-scroll-top:hover {
-  background-color: var(--secondary-color-dark);
+  background-color: var(--primary-color-extra-light);
   transition: 0.3s ease-in-out;
   text-decoration: none;
 }
