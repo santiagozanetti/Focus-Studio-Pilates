@@ -1183,6 +1183,16 @@ nav {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .contact__info p {
+    text-decoration: none;
+  }
+
+  .wpp__contact {
+    text-decoration: none;
+  }
+}
+
 /* -------------------------- HORARIOS --------------------- */
 .horarios__section {
   background: var(--primary-color);
