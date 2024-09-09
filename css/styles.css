@@ -1152,6 +1152,11 @@ nav {
   height: 400px;
 }
 
+.contact__info a {
+  color: inherit; /* Usa el color del texto del elemento padre */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
 @media screen and (max-width: 768px) {
   .contact__container {
     grid-template-columns: 1fr;
@@ -1181,6 +1186,11 @@ nav {
   body {
     overflow-x: hidden;
   }
+
+  .wpp__contact {
+    color: var(--text-light); /* Asegúrate de que el color sea el deseado */
+    text-decoration: none; /* Elimina el subrayado */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1190,6 +1200,11 @@ nav {
 
   .wpp__contact {
     text-decoration: none;
+  }
+
+  .wpp__contact {
+    color: var(--text-light); /* Asegúrate de que el color sea el deseado */
+    text-decoration: none; /* Elimina el subrayado */
   }
 }
 
