@@ -529,8 +529,21 @@ nav {
   .price__grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  .cta__container p {
+    line-height: 0px;
+  }
 }
 
+.plan-text {
+  font-weight: 700;
+  color: #fff;
+}
+
+.cta__container p {
+  line-height: 40px;
+  font-size: 20px;
+  color: var(--text-light);
+}
 /* ---------------------- TESTIMONIOS ---------------------- */
 
 /* .review {
@@ -1251,9 +1264,15 @@ nav {
   color: var(--text-light);
 }
 
-.horarios__table tr:hover {
-  background-color: var(--primary-color-extra-light);
-  cursor: pointer;
+.horarios__table td .turno {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.turno--manana i,
+.turno--tarde i {
+  font-size: 1.5rem;
 }
 
 .cta__container {
@@ -1261,13 +1280,26 @@ nav {
   text-align: center;
 }
 
-.cta__text {
+.cta__text__horarios {
   margin-bottom: 5rem;
   color: var(--text-light);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
-/* Responsive design */
+.btn {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color-dark);
+}
+
 @media (max-width: 768px) {
   .horarios__table {
     width: 100%;
@@ -1315,15 +1347,7 @@ nav {
     padding-left: 0.5rem;
   }
 
-  .horarios__table td .turno--manana {
-    color: var(--text-light);
-  }
-
-  .horarios__table td .turno--tarde {
-    color: var(--text-light); /* Color distintivo para el turno de tarde */
-  }
-
-  .cta__text {
+  .cta__text__horarios {
     font-size: 1rem;
     margin-bottom: 3rem;
   }
