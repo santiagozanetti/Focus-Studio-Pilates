@@ -193,7 +193,7 @@ nav {
 
 .header__container {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -203,8 +203,8 @@ nav {
 .header__container::before {
   content: "EQUILIBRIO";
   position: absolute;
-  bottom: 0.5rem;
-  right: 10rem;
+  bottom: 10rem;
+  right: 1rem;
   font-size: 7rem;
   font-weight: 700;
   line-height: 7rem;
@@ -234,6 +234,10 @@ nav {
 .header__blur {
   bottom: 5rem;
   right: 0;
+}
+
+.header__content {
+  margin-top: -10rem;
 }
 
 .header__content h4 {
@@ -282,6 +286,16 @@ nav {
 .header__image img {
   max-width: 350px;
   margin: auto;
+}
+
+@media (max-width: 480px) {
+  .header__image img {
+    display: none;
+  }
+
+  .header__content {
+    margin-top: 0.1rem;
+  }
 }
 
 .explore__header {
